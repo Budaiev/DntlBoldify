@@ -1,0 +1,16 @@
+PODS:
+  - DntlBoldify (0.1.0)
+
+DEPENDENCIES:
+  - DntlBoldify (from `../`)
+
+EXTERNAL SOURCES:
+  DntlBoldify:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DntlBoldify: 94df004575d8f548e26501e21c9b1adbb9b42828
+
+PODFILE CHECKSUM: d819e056b2178eafd4fded97a5060564083db13b
+
+COCOAPODS: 1.5.3

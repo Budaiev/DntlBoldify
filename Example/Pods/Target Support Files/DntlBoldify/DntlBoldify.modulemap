@@ -1,0 +1,6 @@
+framework module DntlBoldify {
+  umbrella header "DntlBoldify-umbrella.h"
+
+  export *
+  module * { export * }
+}

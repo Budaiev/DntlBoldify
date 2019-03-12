@@ -3,7 +3,7 @@
 //  ConceptAttributedStringHelperTests
 //
 //  Created by Aleksandr Budaiev on 3/6/19.
-//  Copyright © 2019 DNTL. All rights reserved.
+//  Copyright © 2019 test.name. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>

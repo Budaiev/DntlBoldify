@@ -1,0 +1,27 @@
+{
+  "name": "DntlBoldify",
+  "version": "0.1.0",
+  "summary": "Category for NSAttributesString. Apply needed attributes for tagged text",
+  "description": "Usefull for cases when you have different attributes for Localizable.strings.\nConvenient to work with same texts for other targets in the project.",
+  "homepage": "https://github.com/Budaiev/DntlBoldify",
+  "screenshots": [
+    "https://drive.google.com/file/d/1bsLm5csbSmn_bYjj7B3UU_YIrWAGj_xi/view?usp=sharing",
+    "https://drive.google.com/file/d/1QYjR84DlHXMddR9mulil3SXLgnDY69wO/view?usp=sharing"
+  ],
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Aleksandr Budaiev": "budaiev@dnt-lab.com"
+  },
+  "source": {
+    "git": "https://github.com/Budaiev/DntlBoldify.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DntlBoldify/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.h"
+}
