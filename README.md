@@ -9,9 +9,22 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+AttributesTheme * theme = AttributesTheme.defaultTheme;
+
+NSAttributedString * aText =
+[[NSAttributedString alloc] initWithString:NSLocalizedString(@"1 paragraph", @"some text")];
+
+NSAttributedString *aaText =
+[aText transformWithMultipleTags: @[@"<b>",@"<i>",@"<u>",@"<g>"]
+primaryAttributes: theme.primary
+tagAttributes: @[theme.bold, theme.italic, theme.underlined, theme.highlighted]];
+
 ## Requirements
 
 ## Installation
+Category for NSAttributesString. Apply needed attributes for tagged text.
+Usefull for cases when you have different attributes for Localizable.strings.
+Convenient to work with same texts for other targets in the project.
 
 DntlBoldify is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:

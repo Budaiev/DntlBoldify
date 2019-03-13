@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DntlBoldify'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'Category for NSAttributesString. Apply needed attributes for tagged text'
 
 # This description is used to generate tags and improve search results.
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = 'https://github.com/Budaiev/DntlBoldify'
-  s.screenshots     = 'http://github.com/Budaiev/DntlBoldify/blob/master/Example/DntlBoldify/screenshots/eng.png', 'https://github.com/Budaiev/DntlBoldify/blob/master/Example/DntlBoldify/screenshots/rus.png'
+  s.screenshots     = 'http://github.com/Budaiev/DntlBoldify/blob/master/Example/DntlBoldify/screenshots/demo.jpg'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Aleksandr Budaiev' => 'budaiev@dnt-lab.com' }
   s.source           = { :git => 'https://github.com/Budaiev/DntlBoldify.git', :tag => s.version.to_s }

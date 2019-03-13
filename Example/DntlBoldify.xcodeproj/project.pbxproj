@@ -65,7 +65,6 @@
 		C3DB856C2238654F004C4DA5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C3DB857222386A07004C4DA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C3DB857422386A29004C4DA5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		C3DB85772238704B004C4DA5 /* ConceptAttributedStringHelperTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConceptAttributedStringHelperTests.m; sourceTree = "<group>"; };
 		C3DB858122388396004C4DA5 /* demo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo.jpg; sourceTree = "<group>"; };
 		D62AD0677499AB2B122F6718 /* Pods-DntlBoldify_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DntlBoldify_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DntlBoldify_Tests/Pods-DntlBoldify_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E8996AA8B272F2937DB968EB /* Pods_DntlBoldify_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DntlBoldify_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				6003F5BB195388D20070C39A /* Tests.m */,
-				C3DB85772238704B004C4DA5 /* ConceptAttributedStringHelperTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;

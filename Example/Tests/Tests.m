@@ -14,6 +14,10 @@
 
 @end
 
+@interface NSAttributedString ()
+- (NSAttributedString *)transformWithTag:(NSString *)tag tagAttributes:(NSDictionary *)tagAttributes;
+@end
+
 @implementation ConceptAttributedStringHelperTests
 
 - (void)setUp {
@@ -26,9 +30,68 @@
 
 //=============================================================================
 
+- (void)test_TryCatch_WrongExample {
+    
+    __block NSAttributedString * expression =
+    [[NSAttributedString alloc] initWithString:@"<u>sdgf<i>gfdgfd <u> gdfsgsg f <b> sf</b> text </i>text</b> text dfgsgdg</i>text tgdfge<u>xt <u>tgdfgdfg</i>ext text </b> dfgsg <g> gdg <g> ____g&%&%(*(%($#%#%_^*($*^#<u> djkghhggshgh sdghk hksdg sdhkghs ksdkg dsggd hsk hksdhgksd"];
+    
+    __block AttributesTheme * theme = AttributesTheme.defaultTheme;
+    
+    //-----------------------------------------------------------------------------
+    void (^failWithExc1)(void) = ^{
+        
+        expression = [expression transformWithTag:@"g"
+                                    tagAttributes:nil];
+    };
+    
+    XCTAssertThrows(failWithExc1());
+    //-----------------------------------------------------------------------------
+    
+    void (^failWithExc2)(void) = ^{
+        
+        expression = [expression transformWithMultipleTags:@[@"</b>",@"<i",@"<u>",@"<g>"]
+                                         primaryAttributes:nil//theme.primary
+                                            tagAttributes : @[theme.bold, theme.italic, theme.underlined ]]; //theme.highlighted
+    };
+    
+    XCTAssertThrows(failWithExc2());
+    //-----------------------------------------------------------------------------
+    
+    
+    
+    void (^failWithExc3)(void) = ^{
+        
+        
+        expression = [expression transformWithTag:@"g"
+                                    tagAttributes:nil];
+    };
+    
+    
+    XCTAssertThrowsSpecificNamed(failWithExc3(),
+                                 NSException, @"DNTL_NSRangeException", @"should throw DNTL_NSRangeException");
+}
+
+//=============================================================================
+
 /**
- Test the transformWithSingleTag method
+ * Assure the needed attributes is performed correctly.
+ 
+ * Unit under test:
+ Helper NSAttributedString+Boldify.
+ Method - (void)transformWithSingleTag:...
+ 
+ 
+ * Parameters to test:
+ Check if helper proceed correct attributes for defined tags.
  Single bold tag in pair with primary attributes.
+ 
+ * Test scenario:
+ Prepare AttributesTheme.defaultTheme.
+ Fire helper method for expression under test.
+ Make the attributes manually step-by-step.
+ 
+ * Verify
+ Result expression (maded via helper) and expectation maked manually should be equal.
  */
 - (void)test_proofSingleExample {
     
@@ -62,9 +125,28 @@
     XCTAssertTrue([expression isEqualToAttributedString:finishEtalon]);
 }
 
+//=============================================================================
+
+
 /**
- Test the transformWithMultipleTags method
+ * Assure the needed attributes is performed correctly.
+ 
+ * Unit under test:
+ Helper NSAttributedString+Boldify.
+ Method - (void)transformWithMultipleTags:...
+ 
+ 
+ * Parameters to test:
+ Check if helper proceed correct attributes for defined tags.
  There are bold, italic, underlined, highlighted tags works together with primary.
+ 
+ * Test scenario:
+ Prepare AttributesTheme.defaultTheme.
+ Fire helper method for expression under test.
+ Make the attributes manually step-by-step.
+
+ * Verify
+ Result expression (maded via helper) and expectation maked manually should be equal.
  */
 - (void)test_proofMultipleExample {
     
@@ -79,31 +161,31 @@
                            tagAttributes : @[theme.bold, theme.italic, theme.underlined, theme.highlighted]];
     
     /// Compose etalon.
-    NSMutableAttributedString * etalon = NSMutableAttributedString.new;
-    [etalon beginEditing];
-    [etalon appendAttributedString:[self appendStr:@"primary1 "     attributes: theme.primary]];
-    [etalon appendAttributedString:[self appendStr:@"bold 1"        attributes: theme.bold]];
-    [etalon appendAttributedString:[self appendStr:@" primary 2"    attributes: theme.primary]];
-    [etalon appendAttributedString:[self appendStr:@"highlighted1"  attributes:theme.highlighted]];
-    [etalon appendAttributedString:[self appendStr:@" primary3 "    attributes: theme.primary]];
-    [etalon appendAttributedString:[self appendStr:@"bold2"         attributes: theme.bold]];
-    [etalon appendAttributedString:[self appendStr:@" 4primary"     attributes: theme.primary]];
-    [etalon appendAttributedString:[self appendStr:@"underlined"    attributes: theme.underlined]];
-    [etalon appendAttributedString:[self appendStr:@" primary\n 4\nprimary " attributes: theme.primary]];
-    [etalon appendAttributedString:[self appendStr:@"italic"        attributes: theme.italic]];
-    [etalon appendAttributedString:[self appendStr:@"@highlighted"  attributes: theme.highlighted]];
-    [etalon appendAttributedString:[self appendStr:@" "             attributes: theme.primary]];
-    [etalon appendAttributedString:[self appendStr:@" bold ,"       attributes: theme.bold]];
-    [etalon appendAttributedString:[self appendStr:@" highlighted highlighted"  attributes: theme.highlighted]];
-    [etalon appendAttributedString:[self appendStr:@" primary \n \nprimary."    attributes: theme.primary]];
-    [etalon endEditing];
-    NSAttributedString * finishEtalon = [[NSAttributedString alloc] initWithAttributedString:etalon];
+    NSMutableAttributedString * expectation = NSMutableAttributedString.new;
+    [expectation beginEditing];
+    [expectation appendAttributedString:[self appendStr:@"primary1 "     attributes: theme.primary]];
+    [expectation appendAttributedString:[self appendStr:@"bold 1"        attributes: theme.bold]];
+    [expectation appendAttributedString:[self appendStr:@" primary 2"    attributes: theme.primary]];
+    [expectation appendAttributedString:[self appendStr:@"highlighted1"  attributes:theme.highlighted]];
+    [expectation appendAttributedString:[self appendStr:@" primary3 "    attributes: theme.primary]];
+    [expectation appendAttributedString:[self appendStr:@"bold2"         attributes: theme.bold]];
+    [expectation appendAttributedString:[self appendStr:@" 4primary"     attributes: theme.primary]];
+    [expectation appendAttributedString:[self appendStr:@"underlined"    attributes: theme.underlined]];
+    [expectation appendAttributedString:[self appendStr:@" primary\n 4\nprimary " attributes: theme.primary]];
+    [expectation appendAttributedString:[self appendStr:@"italic"        attributes: theme.italic]];
+    [expectation appendAttributedString:[self appendStr:@"@highlighted"  attributes: theme.highlighted]];
+    [expectation appendAttributedString:[self appendStr:@" "             attributes: theme.primary]];
+    [expectation appendAttributedString:[self appendStr:@" bold ,"       attributes: theme.bold]];
+    [expectation appendAttributedString:[self appendStr:@" highlighted highlighted"  attributes: theme.highlighted]];
+    [expectation appendAttributedString:[self appendStr:@" primary \n \nprimary."    attributes: theme.primary]];
+    [expectation endEditing];
+    NSAttributedString * finishExp = [[NSAttributedString alloc] initWithAttributedString:expectation];
     
     /// Check string.
-    XCTAssertTrue([finishEtalon.string isEqualToString:expression.string]);
+    XCTAssertTrue([finishExp.string isEqualToString:expression.string]);
     
     /// Verify string all attributes.
-    XCTAssertTrue([expression isEqualToAttributedString:finishEtalon]);
+    XCTAssertTrue([expression isEqualToAttributedString:finishExp]);
 }
 
 - (NSAttributedString *)appendStr:(NSString *)string
@@ -115,16 +197,28 @@
 //=============================================================================
 
 /**
- NSMutableAttributedString (Cleanup)
- - (NSMutableAttributedString *)cleanupTag:(NSString *)tag
+ * Used helper to make needed cleanings after tags
+ 
+ * Unit under test:
+ Helper NSMutableAttributedString (Cleanup).
+ Method - (NSMutableAttributedString *)cleanupTag:(NSString *)tag
  substituteWithString:(NSString *)string;
+ 
+ * Parameters to test:
+ Check if helper proceed valid cleanup (remove tags).
+ 
+ * Test scenario:
+ Prepared (NSMutableAttributedString *) expression - with tags.
+ Prepared (NSMutableAttributedString *) expectation - without tags.
+ 
+ * Verify expression string should be equal to expectation.
  */
 - (void)test_recursiveTagsCleanup {
     
     NSMutableAttributedString * expression =
     [[NSMutableAttributedString alloc] initWithString:@"Lorem ipsum dolor sit amet, commune <b>tacimates</b> cu duo. Id quo erat regione menandri. Per ex eros zril apeirian, ad vel velit putant, ne agam referrentur mel. Timeam diceret vel at, cu sit <b>tacimates</b> omittantur. Ne mei probo noster inermis, putent inimicus te est. Duo te veniam denique.\n\nVim oratio ubique ea, has cu debet animal. His cu bonorum percipit apeirian, vim ne ludus accusata. <i>Qui hinc nemore civibus ex, mollis intellegat ea eam. Assum summo suscipiantur nam ad.</i> <b>Quo dictas latine definitiones ad</b>, in homero <u>eleifend vim, ponderum facilisi per </u>ad."];
     
-    NSMutableAttributedString * etalon =
+    NSMutableAttributedString * expectation =
     [[NSMutableAttributedString alloc] initWithString:@"Lorem ipsum dolor sit amet, commune tacimates cu duo. Id quo erat regione menandri. Per ex eros zril apeirian, ad vel velit putant, ne agam referrentur mel. Timeam diceret vel at, cu sit tacimates omittantur. Ne mei probo noster inermis, putent inimicus te est. Duo te veniam denique.\n\nVim oratio ubique ea, has cu debet animal. His cu bonorum percipit apeirian, vim ne ludus accusata. Qui hinc nemore civibus ex, mollis intellegat ea eam. Assum summo suscipiantur nam ad. Quo dictas latine definitiones ad, in homero uTageleifend vim, ponderum facilisi per tagUad."];
     
     expression = [expression cleanupTag:@"<b>" substituteWithString:@""];
@@ -137,11 +231,28 @@
     expression = [expression cleanupTag:@"</u>" substituteWithString:@"tagU"];
     
     /// Verify
-    XCTAssertTrue([etalon isEqualToAttributedString:expression], @"all attributes should be equal");
+    XCTAssertTrue([expectation isEqualToAttributedString:expression], @"all attributes should be equal");
 }
 
 //=============================================================================
 
+/**
+ * Test for the future helper.
+ Goal:findout all links.
+ 
+ * Unit under test:
+ That Helper is not implemented yet.
+ 
+ * Parameters to test:
+ Check if regex (NSTextCheckingResult*) find all existed links.
+ 
+ * Test scenario:
+ Prepared (NSMutableAttributedString *) expression - with links.
+ Fire NSRegularExpression.
+ 
+ * Verify:
+ array contains needed links.
+ */
 - (void)test_exampleRegexForLinks {
     
     NSMutableAttributedString * httpLine =

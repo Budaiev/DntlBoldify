@@ -48,7 +48,6 @@
     //=============================================================================
     
     NSRegularExpression *tagsRegex = [NSRegularExpression regularExpressionWithPattern:regexFormat
-                                      //[NSRegularExpression escapedPatternForString:@"\\<b>(.*?)\\</b>"]
                                                                                options:NSRegularExpressionCaseInsensitive
                                                                                  error:nil];
     NSArray *matches = [tagsRegex matchesInString:self.string
@@ -76,21 +75,21 @@
         
         NSRange range = [mRanges[ridx] rangeValue];
         
-        /// if range not found happens
+        /// if range doesn't found
         if (range.length < self.length) {
             
             [attrString addAttributes:tagAttributes range:range];
         } else {
-            
+
             NSString * startsAs = [self.string substringWithRange:NSMakeRange(range.location-3, 6)];
             NSString * reason = [NSString stringWithFormat:@"NSRange for tag: %@ goes out of the bounds at: %@.\nWrong part: %@",
                                  tag , @(range.location), startsAs];
-            
-            @throw [NSException exceptionWithName:@"NSRange Exception"
+
+            @throw [NSException exceptionWithName:@"DNTL_NSRangeException"
                                            reason:reason
-                                         userInfo:nil];
+                                         userInfo:@{}];
         }
-        
+    
     }
     [attrString endEditing];
     
