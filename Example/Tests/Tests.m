@@ -30,7 +30,25 @@
 
 //=============================================================================
 
-- (void)test_TryCatch_WrongExample {
+/**
+ * Approve the helper correctly works with invalid parameters.
+ Helper has @try-@catch handling exceptions.
+ 
+ * Unit under test:
+ Helper NSAttributedString+Boldify.
+ Method - (void)transformWithMultipleTag:...
+ 
+ * Parameters to test:
+ Check: helper method catch exceptions for the failure entrances.
+ 
+ * Test scenario:
+ Prepare AttributesTheme.defaultTheme.
+ Fire method with wrong attributes.
+ 
+ * Verify
+ The helper method is throwing exception.
+ */
+- (void)test_TryCatch_FailExamples {
     
     __block NSAttributedString * expression =
     [[NSAttributedString alloc] initWithString:@"<u>sdgf<i>gfdgfd <u> gdfsgsg f <b> sf</b> text </i>text</b> text dfgsgdg</i>text tgdfge<u>xt <u>tgdfgdfg</i>ext text </b> dfgsg <g> gdg <g> ____g&%&%(*(%($#%#%_^*($*^#<u> djkghhggshgh sdghk hksdg sdhkghs ksdkg dsggd hsk hksdhgksd"];

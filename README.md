@@ -19,6 +19,8 @@ NSAttributedString *aaText =
 primaryAttributes: theme.primary
 tagAttributes: @[theme.bold, theme.italic, theme.underlined, theme.highlighted]];
 
+http://github.com/Budaiev/DntlBoldify/blob/master/Example/DntlBoldify/screenshots/demo.jpg
+
 ## Requirements
 
 ## Installation

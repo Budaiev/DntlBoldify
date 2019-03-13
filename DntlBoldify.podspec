@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DntlBoldify'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'Category for NSAttributesString. Apply needed attributes for tagged text'
 
 # This description is used to generate tags and improve search results.
@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
   Usefull for cases when you have different attributes for Localizable.strings.
   Convenient to work with same texts for other targets in the project.
+  Screenshot http://github.com/Budaiev/DntlBoldify/blob/master/Example/DntlBoldify/screenshots/demo.jpg
                        DESC
 
   s.homepage         = 'https://github.com/Budaiev/DntlBoldify'
