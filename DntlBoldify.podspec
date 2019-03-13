@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = 'https://github.com/Budaiev/DntlBoldify'
-  #s.screenshots     = 'www.dropbox.com/s/izr5n5zxsedzicw/eng.png?dl=0', 'www.dropbox.com/s/hjpve0cldkkp3y1/rus.png?dl=0'
+  s.screenshots     = 'http://github.com/Budaiev/DntlBoldify/blob/master/Example/DntlBoldify/screenshots/eng.png', 'https://github.com/Budaiev/DntlBoldify/blob/master/Example/DntlBoldify/screenshots/rus.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Aleksandr Budaiev' => 'budaiev@dnt-lab.com' }
   s.source           = { :git => 'https://github.com/Budaiev/DntlBoldify.git', :tag => s.version.to_s }
