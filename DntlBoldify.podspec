@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DntlBoldify'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'Category for NSAttributesString. Apply needed attributes for tagged text'
 
 # This description is used to generate tags and improve search results.
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = 'https://github.com/Budaiev/DntlBoldify'
-  s.screenshots     = 'https://drive.google.com/file/d/1bsLm5csbSmn_bYjj7B3UU_YIrWAGj_xi/view?usp=sharing', 'https://drive.google.com/file/d/1QYjR84DlHXMddR9mulil3SXLgnDY69wO/view?usp=sharing'
+  #s.screenshots     = 'www.dropbox.com/s/izr5n5zxsedzicw/eng.png?dl=0', 'www.dropbox.com/s/hjpve0cldkkp3y1/rus.png?dl=0'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Aleksandr Budaiev' => 'budaiev@dnt-lab.com' }
   s.source           = { :git => 'https://github.com/Budaiev/DntlBoldify.git', :tag => s.version.to_s }
@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   #   'DntlBoldify' => ['DntlBoldify/Assets/*.png']
   # }
 
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

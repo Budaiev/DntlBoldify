@@ -7,28 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16E18DE7430839EEDD50569DF3C72D97 /* DntlBoldify-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B1F94F9E9C3816F7514FE70B53004A7E /* DntlBoldify-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E5395F2FC31FA814AE333F0232154CC /* DntlBoldify-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2764B72199F6C1EE23C0A265935E2B /* DntlBoldify-dummy.m */; };
+		16E18DE7430839EEDD50569DF3C72D97 /* DntlBoldify-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ECA94D22B6422BB12864E5A58F005004 /* DntlBoldify-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E5395F2FC31FA814AE333F0232154CC /* DntlBoldify-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0796AF6C444B49E0B9AC273048E182DE /* DntlBoldify-dummy.m */; };
 		2AA5A94390ECA201A86EF00A6A089BC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		4E3FC215FB5A29E426A332E791159E32 /* NSAttributedString+Boldify.h in Headers */ = {isa = PBXBuildFile; fileRef = 48CF72D3A8B658CF37FB67B9B1F7708E /* NSAttributedString+Boldify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E3FC215FB5A29E426A332E791159E32 /* NSAttributedString+Boldify.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BECEAC1BB89468C87DDB2CFA51B064 /* NSAttributedString+Boldify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		563DF860A7B3A68CAA96C2C8259842CF /* Pods-DntlBoldify_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B60B3E53FCDA1EAEFB19094905ED923 /* Pods-DntlBoldify_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		651AC38950E6669794CD0989440F7D6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		90E663602F0FCC7E59726E93F5FAE249 /* AttributesTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 707BD6CE25F95FBC6751BDC826FBAA71 /* AttributesTheme.m */; };
+		6C9D759573CB3B0D680E5654AB6DBB90 /* Pods-DntlBoldify_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F545F3975692A1F6A83204B662EFB63 /* Pods-DntlBoldify_Tests-dummy.m */; };
+		90E663602F0FCC7E59726E93F5FAE249 /* AttributesTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FF99617380490671DACC4279DF73BD28 /* AttributesTheme.m */; };
 		96FE1E9197212366D55C8AABC85462AC /* Pods-DntlBoldify_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 898CB6FF61E84242399BCB9792ECF1E3 /* Pods-DntlBoldify_Example-dummy.m */; };
-		AD89777E14B19BA532D8F12994311A78 /* NSAttributedString+Boldify.m in Sources */ = {isa = PBXBuildFile; fileRef = 426100D7F72F582AB0470B3027C66FA1 /* NSAttributedString+Boldify.m */; };
-		AFF1CF8304602B162AC24D8C564E543B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		C5EA9A14CB135D2DAA62F6667F337F72 /* Pods-DntlBoldify_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B60B3E53FCDA1EAEFB19094905ED923 /* Pods-DntlBoldify_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C781800CD6B5025264F9B00D09B96EA2 /* Pods-DntlBoldify_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F545F3975692A1F6A83204B662EFB63 /* Pods-DntlBoldify_Tests-dummy.m */; };
+		AD89777E14B19BA532D8F12994311A78 /* NSAttributedString+Boldify.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6AB81534D0906A19A7CAEFC33F4DFE /* NSAttributedString+Boldify.m */; };
+		B9AA8D00FD6D0A8F5A85ED530F304A8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		DF20D230129BC83AB8B82AFC8AD8AA4B /* Pods-DntlBoldify_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D86157B6106B6D4F109E9D7E48C2A103 /* Pods-DntlBoldify_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEA892504A2E6025886CEB1BAFBC51BE /* AttributesTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 19B75FC322C3F9AB3CDED7CC03F84D79 /* AttributesTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEA892504A2E6025886CEB1BAFBC51BE /* AttributesTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F925A6C167C1BD4E92E8671BC0DE857 /* AttributesTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D0229AC4C658AD07D7A3FA1C61C122C1 /* PBXContainerItemProxy */ = {
+		1467AEC85F29FF283DF44B7D9831DCDA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1577EB4A2C072FC9C8A55DD59C5EFE7F;
-			remoteInfo = "Pods-DntlBoldify_Example";
+			remoteGlobalIDString = 25CA1F923B4CB54E496F886E3570743F;
+			remoteInfo = DntlBoldify;
 		};
 		ECAC0A7D1DDADD680785A110E407CCAC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -40,44 +40,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06FC8E51850931F92145C9B747CEBAA5 /* DntlBoldify.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DntlBoldify.xcconfig; sourceTree = "<group>"; };
+		0796AF6C444B49E0B9AC273048E182DE /* DntlBoldify-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DntlBoldify-dummy.m"; sourceTree = "<group>"; };
 		16FD3F001B686C7AFB7CB1C0A7CE81AF /* Pods-DntlBoldify_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DntlBoldify_Example.release.xcconfig"; sourceTree = "<group>"; };
-		19B75FC322C3F9AB3CDED7CC03F84D79 /* AttributesTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AttributesTheme.h; path = DntlBoldify/Classes/AttributesTheme.h; sourceTree = "<group>"; };
-		25733D73739B1415901C620D5010010C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F925A6C167C1BD4E92E8671BC0DE857 /* AttributesTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AttributesTheme.h; path = DntlBoldify/Classes/AttributesTheme.h; sourceTree = "<group>"; };
 		2C43AE4E553DF508ECA794031EA8D56C /* Pods-DntlBoldify_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DntlBoldify_Example-resources.sh"; sourceTree = "<group>"; };
-		2F84C3FB58DF40D6B5680CEBE345065A /* DntlBoldify.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DntlBoldify.xcconfig; sourceTree = "<group>"; };
 		2F9BD92B8B407DD4AF2775E930C58B83 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3786876A89FF0F44A5C4F812A074B34C /* Pods-DntlBoldify_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DntlBoldify_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3B60B3E53FCDA1EAEFB19094905ED923 /* Pods-DntlBoldify_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DntlBoldify_Tests-umbrella.h"; sourceTree = "<group>"; };
-		426100D7F72F582AB0470B3027C66FA1 /* NSAttributedString+Boldify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+Boldify.m"; path = "DntlBoldify/Classes/NSAttributedString+Boldify.m"; sourceTree = "<group>"; };
-		458BAF0B8973C584B2FF824EFA37B86C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		48CF72D3A8B658CF37FB67B9B1F7708E /* NSAttributedString+Boldify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+Boldify.h"; path = "DntlBoldify/Classes/NSAttributedString+Boldify.h"; sourceTree = "<group>"; };
 		5554932DBD39167B98638950372955AE /* Pods-DntlBoldify_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DntlBoldify_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5E3E333DC3B77CC7B5EFED8620E19493 /* DntlBoldify.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DntlBoldify.modulemap; sourceTree = "<group>"; };
 		6F545F3975692A1F6A83204B662EFB63 /* Pods-DntlBoldify_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DntlBoldify_Tests-dummy.m"; sourceTree = "<group>"; };
-		707BD6CE25F95FBC6751BDC826FBAA71 /* AttributesTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AttributesTheme.m; path = DntlBoldify/Classes/AttributesTheme.m; sourceTree = "<group>"; };
 		70B3894E261922E7DDDDB01228339792 /* DntlBoldify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DntlBoldify.framework; path = DntlBoldify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A2764B72199F6C1EE23C0A265935E2B /* DntlBoldify-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DntlBoldify-dummy.m"; sourceTree = "<group>"; };
+		758D57ECF6912F28A573D7A9A33ED489 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E0B4C1428CA686AC2FEDE0CBB469E74 /* Pods-DntlBoldify_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DntlBoldify_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		80BECEAC1BB89468C87DDB2CFA51B064 /* NSAttributedString+Boldify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+Boldify.h"; path = "DntlBoldify/Classes/NSAttributedString+Boldify.h"; sourceTree = "<group>"; };
 		81B1F16ACD8FF4FA1FE4DEF6066E95BF /* Pods-DntlBoldify_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DntlBoldify_Example.modulemap"; sourceTree = "<group>"; };
 		898CB6FF61E84242399BCB9792ECF1E3 /* Pods-DntlBoldify_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DntlBoldify_Example-dummy.m"; sourceTree = "<group>"; };
 		8E5C05C1BEE301F6225F82953F11A103 /* Pods-DntlBoldify_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DntlBoldify_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9708FF06C2EBEC249CDBEDE5E68B4DAA /* Pods-DntlBoldify_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DntlBoldify_Tests-resources.sh"; sourceTree = "<group>"; };
-		9FFF3012C87F8F89735255235A31F288 /* DntlBoldify-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DntlBoldify-prefix.pch"; sourceTree = "<group>"; };
+		9F6AB81534D0906A19A7CAEFC33F4DFE /* NSAttributedString+Boldify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+Boldify.m"; path = "DntlBoldify/Classes/NSAttributedString+Boldify.m"; sourceTree = "<group>"; };
 		A43AD40125ADF76807FC6D90354FC941 /* Pods-DntlBoldify_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DntlBoldify_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A66F2F0E16178C69FCBEC707FB5FB3B5 /* Pods-DntlBoldify_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DntlBoldify_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B1F94F9E9C3816F7514FE70B53004A7E /* DntlBoldify-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DntlBoldify-umbrella.h"; sourceTree = "<group>"; };
 		B5ABC3C6CC05D4256901458E6CDD2361 /* Pods-DntlBoldify_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DntlBoldify_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CBBE44F94EF66E3948FA399906A43835 /* Pods-DntlBoldify_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DntlBoldify_Example-frameworks.sh"; sourceTree = "<group>"; };
 		D242FC39E68779FEF66EDC5A51D0661F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5B47920128D3FABF54315BEBDB87802 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		D86157B6106B6D4F109E9D7E48C2A103 /* Pods-DntlBoldify_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DntlBoldify_Example-umbrella.h"; sourceTree = "<group>"; };
+		D8B9A0E46E9575034ABF4E5ACBAC31E0 /* DntlBoldify-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DntlBoldify-prefix.pch"; sourceTree = "<group>"; };
 		E2845E52174E165550A3DC365C907D08 /* Pods_DntlBoldify_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DntlBoldify_Tests.framework; path = "Pods-DntlBoldify_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F771D9490F9E7DA306759D765DBA7F /* Pods-DntlBoldify_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DntlBoldify_Tests.modulemap"; sourceTree = "<group>"; };
-		E973604D9056911F9C432F0A68618480 /* DntlBoldify.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DntlBoldify.modulemap; sourceTree = "<group>"; };
 		EA1B0EE46D420B48C8CB0570C6B44E9C /* Pods-DntlBoldify_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DntlBoldify_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EB61CD029F8DF30E13F5B4F1826BDABA /* DntlBoldify.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = DntlBoldify.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ECA94D22B6422BB12864E5A58F005004 /* DntlBoldify-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DntlBoldify-umbrella.h"; sourceTree = "<group>"; };
 		F14040555F4CB034000BE62A75D2F818 /* Pods_DntlBoldify_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DntlBoldify_Example.framework; path = "Pods-DntlBoldify_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF99617380490671DACC4279DF73BD28 /* AttributesTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AttributesTheme.m; path = DntlBoldify/Classes/AttributesTheme.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,17 +94,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EEF6E30575D423D82757B4F4077A7922 /* Frameworks */ = {
+		F81A8547DFE83ED9B5624A5E38D20830 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFF1CF8304602B162AC24D8C564E543B /* Foundation.framework in Frameworks */,
+				B9AA8D00FD6D0A8F5A85ED530F304A8B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F2B41DCC7A1810E9FA1BCF2C158754A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E3E333DC3B77CC7B5EFED8620E19493 /* DntlBoldify.modulemap */,
+				06FC8E51850931F92145C9B747CEBAA5 /* DntlBoldify.xcconfig */,
+				0796AF6C444B49E0B9AC273048E182DE /* DntlBoldify-dummy.m */,
+				D8B9A0E46E9575034ABF4E5ACBAC31E0 /* DntlBoldify-prefix.pch */,
+				ECA94D22B6422BB12864E5A58F005004 /* DntlBoldify-umbrella.h */,
+				758D57ECF6912F28A573D7A9A33ED489 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DntlBoldify";
+			sourceTree = "<group>";
+		};
 		2A8C258248CE376415F215A254B6C927 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +156,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		54A7396EA510990502E15C671D0F0D5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B57509E4157A501CF5D33501ADD7E853 /* DntlBoldify */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,35 +176,24 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				CC4909B4FE76AD157FF411EBA12DE4D7 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				54A7396EA510990502E15C671D0F0D5E /* Pods */,
 				4FCA4F25E8A136B155914DC4B93745E1 /* Products */,
 				2A8C258248CE376415F215A254B6C927 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		AAC0FA8C37469995848362823008F5A3 /* Pod */ = {
+		B57509E4157A501CF5D33501ADD7E853 /* DntlBoldify */ = {
 			isa = PBXGroup;
 			children = (
-				EB61CD029F8DF30E13F5B4F1826BDABA /* DntlBoldify.podspec */,
-				458BAF0B8973C584B2FF824EFA37B86C /* LICENSE */,
-				D5B47920128D3FABF54315BEBDB87802 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		AFA43236EA60B60D3EE35F4279C29E47 /* DntlBoldify */ = {
-			isa = PBXGroup;
-			children = (
-				19B75FC322C3F9AB3CDED7CC03F84D79 /* AttributesTheme.h */,
-				707BD6CE25F95FBC6751BDC826FBAA71 /* AttributesTheme.m */,
-				48CF72D3A8B658CF37FB67B9B1F7708E /* NSAttributedString+Boldify.h */,
-				426100D7F72F582AB0470B3027C66FA1 /* NSAttributedString+Boldify.m */,
-				AAC0FA8C37469995848362823008F5A3 /* Pod */,
-				DD2E907C37EAE78D361D00E57AF8ED1D /* Support Files */,
+				1F925A6C167C1BD4E92E8671BC0DE857 /* AttributesTheme.h */,
+				FF99617380490671DACC4279DF73BD28 /* AttributesTheme.m */,
+				80BECEAC1BB89468C87DDB2CFA51B064 /* NSAttributedString+Boldify.h */,
+				9F6AB81534D0906A19A7CAEFC33F4DFE /* NSAttributedString+Boldify.m */,
+				0F2B41DCC7A1810E9FA1BCF2C158754A /* Support Files */,
 			);
 			name = DntlBoldify;
-			path = ../..;
+			path = DntlBoldify;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -214,28 +222,6 @@
 			path = "Target Support Files/Pods-DntlBoldify_Example";
 			sourceTree = "<group>";
 		};
-		CC4909B4FE76AD157FF411EBA12DE4D7 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AFA43236EA60B60D3EE35F4279C29E47 /* DntlBoldify */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		DD2E907C37EAE78D361D00E57AF8ED1D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E973604D9056911F9C432F0A68618480 /* DntlBoldify.modulemap */,
-				2F84C3FB58DF40D6B5680CEBE345065A /* DntlBoldify.xcconfig */,
-				7A2764B72199F6C1EE23C0A265935E2B /* DntlBoldify-dummy.m */,
-				9FFF3012C87F8F89735255235A31F288 /* DntlBoldify-prefix.pch */,
-				B1F94F9E9C3816F7514FE70B53004A7E /* DntlBoldify-umbrella.h */,
-				25733D73739B1415901C620D5010010C /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/DntlBoldify";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -257,11 +243,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4FC857D9BB075EC9ED9FF90C56C4B26 /* Headers */ = {
+		B1E1C5CCF8048C6D6E26CFA2B3D2A21E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5EA9A14CB135D2DAA62F6667F337F72 /* Pods-DntlBoldify_Tests-umbrella.h in Headers */,
+				563DF860A7B3A68CAA96C2C8259842CF /* Pods-DntlBoldify_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,18 +289,18 @@
 			productReference = 70B3894E261922E7DDDDB01228339792 /* DntlBoldify.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		339984C3176AA781ACB160ABC56200E6 /* Pods-DntlBoldify_Tests */ = {
+		C6096300B85A33C047B7A5D0819927C2 /* Pods-DntlBoldify_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E49E5A53FB31410C2357043786D9BBC4 /* Build configuration list for PBXNativeTarget "Pods-DntlBoldify_Tests" */;
+			buildConfigurationList = E53F5FA44908408B6EEA864195A01FA9 /* Build configuration list for PBXNativeTarget "Pods-DntlBoldify_Tests" */;
 			buildPhases = (
-				4D728E5F2C97759D1960D0F53FC39B0B /* Sources */,
-				EEF6E30575D423D82757B4F4077A7922 /* Frameworks */,
-				A4FC857D9BB075EC9ED9FF90C56C4B26 /* Headers */,
+				E0A51DB2DE87547EA9E00C1733C137A2 /* Sources */,
+				F81A8547DFE83ED9B5624A5E38D20830 /* Frameworks */,
+				B1E1C5CCF8048C6D6E26CFA2B3D2A21E /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A4EC66425BB9AB9C3748C408E9583619 /* PBXTargetDependency */,
+				4EA0C3A05BE4110B5B67D293E1AF241E /* PBXTargetDependency */,
 			);
 			name = "Pods-DntlBoldify_Tests";
 			productName = "Pods-DntlBoldify_Tests";
@@ -344,25 +330,25 @@
 			targets = (
 				25CA1F923B4CB54E496F886E3570743F /* DntlBoldify */,
 				1577EB4A2C072FC9C8A55DD59C5EFE7F /* Pods-DntlBoldify_Example */,
-				339984C3176AA781ACB160ABC56200E6 /* Pods-DntlBoldify_Tests */,
+				C6096300B85A33C047B7A5D0819927C2 /* Pods-DntlBoldify_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4D728E5F2C97759D1960D0F53FC39B0B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C781800CD6B5025264F9B00D09B96EA2 /* Pods-DntlBoldify_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BCEDDB2EF4AE2B6DB7DE8A92BECC5F52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				96FE1E9197212366D55C8AABC85462AC /* Pods-DntlBoldify_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0A51DB2DE87547EA9E00C1733C137A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C9D759573CB3B0D680E5654AB6DBB90 /* Pods-DntlBoldify_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,11 +365,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A4EC66425BB9AB9C3748C408E9583619 /* PBXTargetDependency */ = {
+		4EA0C3A05BE4110B5B67D293E1AF241E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-DntlBoldify_Example";
-			target = 1577EB4A2C072FC9C8A55DD59C5EFE7F /* Pods-DntlBoldify_Example */;
-			targetProxy = D0229AC4C658AD07D7A3FA1C61C122C1 /* PBXContainerItemProxy */;
+			name = DntlBoldify;
+			target = 25CA1F923B4CB54E496F886E3570743F /* DntlBoldify */;
+			targetProxy = 1467AEC85F29FF283DF44B7D9831DCDA /* PBXContainerItemProxy */;
 		};
 		C0A91D4F491024E3A856A171B6CEA3A8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -394,7 +380,138 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1EE19F5DD95931924296F637BF18BD8F /* Debug */ = {
+		0157AC21170EE21A65E3169C24EE127C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5ABC3C6CC05D4256901458E6CDD2361 /* Pods-DntlBoldify_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DntlBoldify_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DntlBoldify_Tests/Pods-DntlBoldify_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3598E3786E54747B5CD59AF0CCFB3F0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A66F2F0E16178C69FCBEC707FB5FB3B5 /* Pods-DntlBoldify_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DntlBoldify_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DntlBoldify_Tests/Pods-DntlBoldify_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		56AAFAABD2783D8493C451C930C50C50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3786876A89FF0F44A5C4F812A074B34C /* Pods-DntlBoldify_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DntlBoldify_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DntlBoldify_Example/Pods-DntlBoldify_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7C1EF9EB2E3D5EEDB2E91142E50B2056 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06FC8E51850931F92145C9B747CEBAA5 /* DntlBoldify.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DntlBoldify/DntlBoldify-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DntlBoldify/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DntlBoldify/DntlBoldify.modulemap";
+				PRODUCT_MODULE_NAME = DntlBoldify;
+				PRODUCT_NAME = DntlBoldify;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -447,7 +564,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -457,41 +574,7 @@
 			};
 			name = Debug;
 		};
-		1F9F48D26D6CB6C13E93255D5E9EA7EB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A66F2F0E16178C69FCBEC707FB5FB3B5 /* Pods-DntlBoldify_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DntlBoldify_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DntlBoldify_Tests/Pods-DntlBoldify_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		45BBF70025E18B93363ACCCB8157F83B /* Release */ = {
+		99A6DBDF1C619C3B482713A704FCE7C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 16FD3F001B686C7AFB7CB1C0A7CE81AF /* Pods-DntlBoldify_Example.release.xcconfig */;
 			buildSettings = {
@@ -507,7 +590,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-DntlBoldify_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-DntlBoldify_Example/Pods-DntlBoldify_Example.modulemap";
@@ -518,70 +601,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		52484F9B056AC438E0D69DD38D165992 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3786876A89FF0F44A5C4F812A074B34C /* Pods-DntlBoldify_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DntlBoldify_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DntlBoldify_Example/Pods-DntlBoldify_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7C1EF9EB2E3D5EEDB2E91142E50B2056 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F84C3FB58DF40D6B5680CEBE345065A /* DntlBoldify.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DntlBoldify/DntlBoldify-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DntlBoldify/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DntlBoldify/DntlBoldify.modulemap";
-				PRODUCT_MODULE_NAME = DntlBoldify;
-				PRODUCT_NAME = DntlBoldify;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -591,7 +610,7 @@
 		};
 		9A88BF9ABB72966DE2C071A84CED1909 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F84C3FB58DF40D6B5680CEBE345065A /* DntlBoldify.xcconfig */;
+			baseConfigurationReference = 06FC8E51850931F92145C9B747CEBAA5 /* DntlBoldify.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -619,40 +638,7 @@
 			};
 			name = Debug;
 		};
-		AD64D1CD4E973E03612B05E2BF40E470 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5ABC3C6CC05D4256901458E6CDD2361 /* Pods-DntlBoldify_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DntlBoldify_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DntlBoldify_Tests/Pods-DntlBoldify_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F4568DEE257655D290C2B9CEAB37C934 /* Release */ = {
+		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -702,7 +688,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -725,17 +711,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1EE19F5DD95931924296F637BF18BD8F /* Debug */,
-				F4568DEE257655D290C2B9CEAB37C934 /* Release */,
+				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
+				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E49E5A53FB31410C2357043786D9BBC4 /* Build configuration list for PBXNativeTarget "Pods-DntlBoldify_Tests" */ = {
+		E53F5FA44908408B6EEA864195A01FA9 /* Build configuration list for PBXNativeTarget "Pods-DntlBoldify_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AD64D1CD4E973E03612B05E2BF40E470 /* Debug */,
-				1F9F48D26D6CB6C13E93255D5E9EA7EB /* Release */,
+				0157AC21170EE21A65E3169C24EE127C /* Debug */,
+				3598E3786E54747B5CD59AF0CCFB3F0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -743,8 +729,8 @@
 		FF01A867DB2F2BEB07EB12D8633B8B36 /* Build configuration list for PBXNativeTarget "Pods-DntlBoldify_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				52484F9B056AC438E0D69DD38D165992 /* Debug */,
-				45BBF70025E18B93363ACCCB8157F83B /* Release */,
+				56AAFAABD2783D8493C451C930C50C50 /* Debug */,
+				99A6DBDF1C619C3B482713A704FCE7C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

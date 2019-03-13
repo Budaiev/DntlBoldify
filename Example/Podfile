@@ -3,11 +3,15 @@ use_frameworks!
 platform :ios, '8.0'
 
 target 'DntlBoldify_Example' do
-  pod 'DntlBoldify', :path => '../'
-
-  target 'DntlBoldify_Tests' do
-    inherit! :search_paths
-
-    
-  end
+    pod 'DntlBoldify'
+#  pod 'DntlBoldify', :path => '../'
+#
+#  target 'DntlBoldify_Tests' do
+#    inherit! :search_paths
+#
+#
+#  end
+end
+target 'DntlBoldify_Tests' do
+pod 'DntlBoldify'
 end

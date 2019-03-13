@@ -23,8 +23,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** Proceed with single tag.
  * @param tag The single string tag.
- * @param primaryAttributes The attributesfor common text.
- * @param tagAttributes The specified attributes for text inside tags.
+ * @param primaryFont An ordinary font for text body.
+ * @param primaryColor An ordinary text color for text body.
+ * @param tagFont The specified fonts for text inside tag.
+ * @param tagColor The specified text color for text inside tag.
  * @result modified NSAttributedString.
  */
 - (NSAttributedString *)transformWithSingleTag:(NSString *)tag
@@ -35,8 +37,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** Proceed with multiple tags.
  * @param tags An array with needed tags.
- * @param primaryAttributes The attributesfor common text.
- * @param tagAttributes The specified attributes for text inside tags.Index according to tag.
+ * @param primaryFont An ordinary font for text body.
+ * @param primaryColor An ordinary text color for text body.
+ * @param tagFonts The specified fonts for text inside tags. Index according to tag.
+ * @param tagColors The specified text color for text inside tags. Index according to tag.
  * @result modified NSAttributedString.
  */
 - (NSAttributedString *)transformWithMultipleTags:(NSArray *)tags

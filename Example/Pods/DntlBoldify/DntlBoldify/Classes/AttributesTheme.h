@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
-NS_ASSUME_NONNULL_END
+
 /**
  NSAttributedString decoration object.
  Mark needed attributes.
@@ -67,4 +67,4 @@ NS_ASSUME_NONNULL_END
                                 highlighted:(NSDictionary *)highlighted;
 @end
 
-
+NS_ASSUME_NONNULL_END
