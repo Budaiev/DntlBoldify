@@ -8,9 +8,14 @@
 
 Purpose
 --------------
-Category for NSAttributesString. Apply needed attributes for tagged text.
-Usefull for cases when you have different attributes for Localizable.strings.
-Convenient to work with same texts for other targets in the project.
+Category for NSAttributesString.
+Usefull for cases when you have a different attributes for text.
+Specify needed attributes via tagging text in the single localized key.
+
+Motivation
+--------------
+Whole paragraphs of attributed text handled easily, even for multiple targets in the project.
+No need to gather separated NSAttributedString strings into the NSMutableAttributedString.
 
 ## Installation
 
@@ -45,7 +50,8 @@ tagAttributes: @[theme.bold, theme.italic, theme.underlined, theme.highlighted]]
 
 DntlBoldify helper is created at Design and Test lab company [DNTL](https://www.dnt-lab.com).
 
-Idea, mentoring: Krasylnikov, krasylnikov@dnt-lab.com 
+Idea, mentor: Krasylnikov, krasylnikov@dnt-lab.com
+
 Developer: Budaiev, budaiev@dnt-lab.com
 
 ## License
