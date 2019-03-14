@@ -12,30 +12,6 @@ Category for NSAttributesString. Apply needed attributes for tagged text.
 Usefull for cases when you have different attributes for Localizable.strings.
 Convenient to work with same texts for other targets in the project.
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-![Preview](preview.gif)
-
-Methods
----------------------------
-AttributesTheme * theme = AttributesTheme.defaultTheme;
-
-NSAttributedString * aText =
-[[NSAttributedString alloc] initWithString:NSLocalizedString(@"1 paragraph", @"some text")];
-
-NSAttributedString *aaText =
-[aText transformWithMultipleTags: @[@"<b>",@"<i>",@"<u>",@"<g>"]
-primaryAttributes: theme.primary
-tagAttributes: @[theme.bold, theme.italic, theme.underlined, theme.highlighted]];
-
----------------------------
-
-http://github.com/Budaiev/DntlBoldify/blob/master/Example/DntlBoldify/screenshots/demo.jpg
-
-## Requirements
-
 ## Installation
 
 DntlBoldify is available through [CocoaPods](https://cocoapods.org). To install
@@ -45,9 +21,32 @@ it, simply add the following line to your Podfile:
 pod 'DntlBoldify'
 ```
 
-## Author
+## Example
 
-Budaiev, budaiev@dnt-lab.com
+![Preview](preview.gif)
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+Methods
+---------------------------
+
+AttributesTheme * theme = AttributesTheme.defaultTheme;
+
+NSAttributedString * aText =
+[[NSAttributedString alloc] initWithString:NSLocalizedString(@"1 paragraph text", @"1 part")];
+
+NSAttributedString *aaText =
+[aText transformWithMultipleTags: @[@"<q>",@"<p>",@"<e>"]
+primaryAttributes: theme.primary
+tagAttributes: @[theme.bold, theme.italic, theme.underlined, theme.highlighted]];
+
+
+## Created
+
+DntlBoldify helper is created at Design and Test lab company [DNTL](https://www.dnt-lab.com).
+
+Idea, mentoring: Krasylnikov, krasylnikov@dnt-lab.com 
+Developer: Budaiev, budaiev@dnt-lab.com
 
 ## License
 
