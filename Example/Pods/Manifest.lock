@@ -1,16 +1,16 @@
 PODS:
-  - DntlBoldify (0.1.1)
+  - DntlBoldify (0.1.4)
 
 DEPENDENCIES:
-  - DntlBoldify
+  - DntlBoldify (from `../`)
 
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - DntlBoldify
+EXTERNAL SOURCES:
+  DntlBoldify:
+    :path: "../"
 
 SPEC CHECKSUMS:
-  DntlBoldify: a8b6631fbc085f9b5956f63a2d76ef26dcd884e5
+  DntlBoldify: fbdb1a0ec8912ad258d8503bd0681ba1b5cd4b5c
 
-PODFILE CHECKSUM: b144a417f6dd49bbb1d4aaff1ee093b07ea2c284
+PODFILE CHECKSUM: 96aec12ba0363e2e4ff74bc6e4a2f199d632abc2
 
 COCOAPODS: 1.5.3
