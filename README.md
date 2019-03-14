@@ -6,19 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/DntlBoldify.svg?style=flat)](https://cocoapods.org/pods/DntlBoldify)
 
 
-Purpose
---------------
-Category for NSAttributesString.
-Usefull for cases when you have a different attributes for text.
-Specify needed attributes via tagging text in the single localized key.
-
-Motivation
---------------
-Whole paragraphs of attributed text handled easily, even for multiple targets in the project.
-No need to gather separated NSAttributedString strings into the NSMutableAttributedString.
-
 ## Installation
-
 DntlBoldify is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
@@ -26,34 +14,28 @@ it, simply add the following line to your Podfile:
 pod 'DntlBoldify'
 ```
 
-## Example
+## About
+NSAttributedString category.
+Most usefull for cases when you have a different attributes for your text.
+
+## Demo
 
 ![Preview](preview.gif)
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-Methods
----------------------------
+## Motivation
+Whole paragraphs of attributed text handled easily, even for multiple targets in the project.
+No need to gather separated NSAttributedString strings into the NSMutableAttributedString.
 
-AttributesTheme * theme = AttributesTheme.defaultTheme;
+## Decision
+Specify needed attributes via tagging.
+The right place  for this - Localized.strings, even long attributed texts just handled in the single key.
 
-NSAttributedString * aText =
-[[NSAttributedString alloc] initWithString:NSLocalizedString(@"1 paragraph text", @"1 part")];
-
-NSAttributedString *aaText =
-[aText transformWithMultipleTags: @[@"html-like-tag1",@"html-like-tag2",@"html-like-tag3",@"html-like-tag4"]
-primaryAttributes: theme.primary
-tagAttributes: @[theme.bold, theme.italic, theme.underlined, theme.highlighted]];
-
-
-## Created
-
-DntlBoldify helper is created with love at the [Design and Test Lab](https://www.dnt-lab.com) company.
-
-Idea, mentor: Krasylnikov, krasylnikov@dnt-lab.com
-
-Developer: Budaiev, budaiev@dnt-lab.com
+## Created by
+DntlBoldify is created with love at the [Design and Test Lab](https://www.dnt-lab.com) company.
+Idea, mentor: Krasylnikov Dmytriy, krasylnikov@dnt-lab.com
+Developer: Budaiev Aleksandr, budaiev@dnt-lab.com
 
 ## License
-
 DntlBoldify is available under the MIT license. See the LICENSE file for more info.
