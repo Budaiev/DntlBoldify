@@ -48,7 +48,7 @@ tagAttributes: @[theme.bold, theme.italic, theme.underlined, theme.highlighted]]
 
 ## Created
 
-DntlBoldify helper is created at Design and Test lab company [DNTL](https://www.dnt-lab.com).
+DntlBoldify helper is created with love at the [Design and Test Lab](https://www.dnt-lab.com) company.
 
 Idea, mentor: Krasylnikov, krasylnikov@dnt-lab.com
 
