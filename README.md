@@ -36,7 +36,7 @@ NSAttributedString * aText =
 [[NSAttributedString alloc] initWithString:NSLocalizedString(@"1 paragraph text", @"1 part")];
 
 NSAttributedString *aaText =
-[aText transformWithMultipleTags: @[@"<qw>",@"<we>",@"<rt>"]
+[aText transformWithMultipleTags: @[@"html-like-tag1",@"html-like-tag2",@"html-like-tag3",@"html-like-tag4"]
 primaryAttributes: theme.primary
 tagAttributes: @[theme.bold, theme.italic, theme.underlined, theme.highlighted]];
 
