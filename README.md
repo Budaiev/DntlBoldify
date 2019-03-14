@@ -26,16 +26,19 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Motivation
 Whole paragraphs of attributed text handled easily, even for multiple targets in the project.
-No need to gather separated NSAttributedString strings into the NSMutableAttributedString.
+No routine to generate NSAttributedString one-by-one in the NSMutableAttributedString.
 
 ## Decision
 Specify needed attributes via tagging.
-The right place  for this - Localized.strings, even long attributed texts just handled in the single key.
+The right place  for this - Localized.strings, even long and complex attributed texts just handled by the single localized key.
 
 ## Created by
+
 DntlBoldify is created with love at the [Design and Test Lab](https://www.dnt-lab.com) company.
-Idea, mentor: Krasylnikov Dmytriy, krasylnikov@dnt-lab.com
-Developer: Budaiev Aleksandr, budaiev@dnt-lab.com
+
+Idea, mentor: Krasylnikov Dmytriy, krasylnikov@dnt-lab.com.
+
+Developer: Budaiev Aleksandr, budaiev@dnt-lab.com.
 
 ## License
 DntlBoldify is available under the MIT license. See the LICENSE file for more info.
