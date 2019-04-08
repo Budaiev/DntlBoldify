@@ -31,9 +31,17 @@ env:
     - DESTINATION="platform=iOS Simulator,OS=9.0,name=iPhone 6"     POD_LINT="NO"
     - DESTINATION="platform=iOS Simulator,OS=8.1,name=iPhone 4S"    POD_LINT="NO"
 
+
 script:
-  - xcodebuild -workspace Example/DntlBoldify.xcworkspace -scheme DntlBoldify-Example -destination "$DESTINATION" build
-  - xcodebuild -workspace Example/DntlBoldify.xcworkspace -scheme DntlBoldify-Example -destination "$DESTINATION" test
+  - xctool -workspace Example/DntlBoldify.xcworkspace -scheme DntlBoldify-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xctool run-tests -workspace Example/DntlBoldify.xcworkspace -scheme DntlBoldify-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+
+#script:
+# - xctool test -workspace Example/DntlBoldify.xcworkspace -scheme DntlBoldify_Tests -sdk #iphonesimulator ONLY_ACTIVE_ARCH=NO
+	
+#- xcodebuild -workspace Example/DntlBoldify.xcworkspace -scheme {scheme} -sdk #iphonesimulator ONLY_ACTIVE_ARCH=NO
+#  - xcodebuild -workspace Example/DntlBoldify.xcworkspace -scheme DntlBoldify-Example -#destination "$DESTINATION" build
+#  - xcodebuild -workspace Example/DntlBoldify.xcworkspace -scheme DntlBoldify-Example -#destination "$DESTINATION" test
 
   # Run `pod lib lint` if specified
   - if [ $POD_LINT == "YES" ]; then
