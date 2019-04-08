@@ -14,13 +14,13 @@
 #- pod lib lint
 
 language: objective-c
-osx_image: xcode10.1
+osx_image: xcode10.2
 
 podfile: Example/Podfile
 
 before_install:
   - echo $(which wstest)
-  - gem install cocoapods -v '1.2.1'
+  - gem install cocoapods -v '1.5.3'
   - pod --version
 
 env:
