@@ -13,28 +13,28 @@
 #- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/#DntlBoldify.xcworkspace -scheme DntlBoldify-Example -sdk iphonesimulator9.3 #ONLY_ACTIVE_ARCH=NO | xcpretty
 #- pod lib lint
 
-language: objective-c
-osx_image: xcode10.2
-
-podfile: Example/Podfile
-
-before_install:
-  - echo $(which wstest)
-  - gem install cocoapods -v '1.5.3'
-  - pod --version
-
-env:
-  matrix:
-    - DESTINATION="platform=iOS Simulator,OS=12.0,name=iPhone X"    POD_LINT="YES"
-    - DESTINATION="platform=iOS Simulator,OS=11.0.1,name=iPhone 8"  POD_LINT="NO"
-    - DESTINATION="platform=iOS Simulator,OS=10.1,name=iPhone 7"    POD_LINT="NO"
-    - DESTINATION="platform=iOS Simulator,OS=9.0,name=iPhone 6"     POD_LINT="NO"
-    - DESTINATION="platform=iOS Simulator,OS=8.1,name=iPhone 4S"    POD_LINT="NO"
+#language: objective-c
 
 
-script:
-  - xctool -workspace Example/DntlBoldify.xcworkspace -scheme DntlBoldify-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-  - xctool run-tests -workspace Example/DntlBoldify.xcworkspace -scheme DntlBoldify-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+#podfile: Example/Podfile
+
+#before_install:
+#  - echo $(which wstest)
+#  - gem install cocoapods -v '1.5.3'
+#  - pod --version
+
+#env:
+#  matrix:
+#    - DESTINATION="platform=iOS Simulator,OS=12.0,name=iPhone X"    POD_LINT="YES"
+ #   - DESTINATION="platform=iOS Simulator,OS=11.0.1,name=iPhone 8"  POD_LINT="NO"
+  #  - DESTINATION="platform=iOS Simulator,OS=10.1,name=iPhone 7"    POD_LINT="NO"
+   # - DESTINATION="platform=iOS Simulator,OS=9.0,name=iPhone 6"     POD_LINT="NO"
+    #- DESTINATION="platform=iOS Simulator,OS=8.1,name=iPhone 4S"    POD_LINT="NO"
+
+
+#script:
+ # - xctool -workspace Example/DntlBoldify.xcworkspace -scheme DntlBoldify-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  #- xctool run-tests -workspace Example/DntlBoldify.xcworkspace -scheme DntlBoldify-Example -sdk iphonesimulator #ONLY_ACTIVE_ARCH=NO
 
 #script:
 # - xctool test -workspace Example/DntlBoldify.xcworkspace -scheme DntlBoldify_Tests -sdk #iphonesimulator ONLY_ACTIVE_ARCH=NO
@@ -44,9 +44,24 @@ script:
 #  - xcodebuild -workspace Example/DntlBoldify.xcworkspace -scheme DntlBoldify-Example -#destination "$DESTINATION" test
 
   # Run `pod lib lint` if specified
-  - if [ $POD_LINT == "YES" ]; then
-    pod lib lint --verbose --allow-warnings;
-    fi
+ # - if [ $POD_LINT == "YES" ]; then
+ #   pod lib lint --verbose --allow-warnings;
+ #   fi
 
-after_success:
-  - bash <(curl -s https://codecov.io/bash) -J 'Boldify'
+#after_success:
+#  - bash <(curl -s https://codecov.io/bash) -J 'Boldify'
+
+
+
+
+language: objective-c
+#osx_image: xcode10.2
+xcode_project: Example/DntlBoldify.xcworkspace
+xcode_scheme: DntlBoldify-Example
+xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
+
+script: 
+  - xcodebuild build-for-testing -workspace Example/DntlBoldify.xcworkspace -scheme DntlBoldify-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xctool run-tests -workspace Example/DntlBoldify.xcworkspace -scheme DntlBoldify-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+
+
